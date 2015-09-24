@@ -14,6 +14,7 @@ It normally also installs the LLVM dependencies.
 Compilation
 -----------
 
+mkdir build
 cd build
 cmake ../cmake
 
