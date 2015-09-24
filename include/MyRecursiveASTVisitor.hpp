@@ -511,7 +511,7 @@ public:
    */
   bool VisitForStmt( clang::ForStmt * p_stmt )
   {
-    operands[ "for" ] += 1;
+    operators[ "for" ] += 1;
     operators[ "()" ] += 1;
     
     return true;
@@ -523,7 +523,7 @@ public:
    */
   bool VisitWhileStmt( clang::WhileStmt * p_stmt )
   {
-    operands[ "while" ] += 1;
+    operators[ "while" ] += 1;
     operators[ "()" ] += 1;
 
     return true;
@@ -534,8 +534,8 @@ public:
    */
   bool VisitDoStmt( clang::DoStmt * p_stmt )
   {
-    operands[ "do" ] += 1;
-    operands[ "while" ] += 1;
+    operators[ "do" ] += 1;
+    operators[ "while" ] += 1;
     operators[ "()" ] += 1;
 
     return true;
