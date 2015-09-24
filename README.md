@@ -15,7 +15,9 @@ Compilation
 -----------
 
 mkdir build
+
 cd build
+
 cmake ../cmake
 
 
@@ -36,8 +38,12 @@ Issues
 ------
 
 On Debian/Ubuntu systems it seems that some files are not placed in the correct directory, see:
+
 https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=785931
+
 https://llvm.org/bugs/show_bug.cgi?id=23352
 
+
 Debian simple bug workaround :
+
 ln -s /usr/share/llvm-3.6 /usr/lib/llvm-3.6/share/llvm
